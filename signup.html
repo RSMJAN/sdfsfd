@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Thrones Sign-Up</title>
+	<style>
+		body {
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 100px;
+			padding: 0;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 40px;
+			background-color: #333;
+			border-radius: 10px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"],
+		input[type="password"],
+		input[type="email"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			background-color: #444;
+			color: #fff;
+			border-radius: 5px;
+		}
+
+		input[type="submit"] {
+			background-color: #EFC94C;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 20px;
+			font-weight: bold;
+			text-transform: uppercase;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #D5A51C;
+		}
+	</style>
+</head>
+<body>
+	<h1>Game of Thrones</h1>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password" required>
+
+		<input type="submit" value="Sign Up">
+	</form>
+</body>
+</html>
